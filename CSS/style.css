@@ -30,13 +30,22 @@ nav a {
 }
 
 nav > ul > li > a {
-    color: #fff;
+    color: #ffffff;
       display: block;
       margin: 20px 0;
+      margin-bottom: 0;
       border-bottom: 3px solid transparent;
       transition: all 350ms ease-in-out;
       font-size: 14px;
+      padding-bottom: 40px;
   } 
+
+nav > ul > li:hover > a {
+    color: #bbffff; 
+    border-bottom: 3px solid #7dfff4;
+    transition: all 350ms ease-in-out;
+    
+}
 
 .menu .container {
     display: flex;
@@ -53,7 +62,6 @@ nav > ul > li > a {
 }
 
 .dropdown {
-    position: relative;
     text-indent: 0%;
 }
 
@@ -64,9 +72,7 @@ nav > ul > li > a {
     display: inline-block;
 }
 .submenu {
-    position: absolute;
-    margin-top: 18px;
-    display: inline-block;
+    display: inline;
     border-bottom: 3px solid rgb(0, 212, 177);
     border-left: 1px solid rgb(0, 212, 177);
     border-right: 1px solid rgb(0, 212, 177);
