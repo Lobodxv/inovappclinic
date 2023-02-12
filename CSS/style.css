@@ -29,6 +29,9 @@ nav a {
     color: white;
 }
 
+nav > ul > li {
+    height: 0;
+}
 nav > ul > li > a {
     color: #ffffff;
       display: block;
@@ -63,6 +66,7 @@ nav > ul > li:hover > a {
 
 .dropdown {
     text-indent: 0%;
+
 }
 
 .dropdown div {
@@ -76,12 +80,14 @@ nav > ul > li:hover > a {
     border-bottom: 3px solid rgb(0, 212, 177);
     border-left: 1px solid rgb(0, 212, 177);
     border-right: 1px solid rgb(0, 212, 177);
+}
 
+.dropdown div {
     visibility: hidden;
     opacity: 0;
     transition: visibility 1s, opacity 0.5s linear;
 }
-.dropdown:hover .submenu {
+.dropdown:hover div {
     visibility: visible;
     opacity: 1;
     z-index: 2;
